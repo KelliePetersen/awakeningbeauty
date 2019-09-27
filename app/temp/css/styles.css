@@ -371,7 +371,7 @@ body {
   font-family: 'Lato', arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  letter-spacing: 1.75;
+  line-height: 1.75;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -593,9 +593,64 @@ html.sr .heading {
     display: none;
   }
 
+.cta {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  text-align: center;
+  color: var(--white);
+}
+
+@media (min-width: 768px) {
+
+.cta {
+    height: 450px
+}
+  }
+
+.cta__image {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+.cta__container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+
+.cta__heading {
+    font-size: 2.5rem;
+    max-width: 430px;
+    margin: 0 auto;
+  }
+
+@media (max-width: 768px), (max-height: 768px) {
+
+  .cta__heading {
+    font-size: calc(1.0375rem + 3.04688vmin);
+  }
+}
+
+.cta__subheading {
+    font-size: 1.75rem;
+  }
+
+@media (max-width: 768px), (max-height: 768px) {
+
+  .cta__subheading {
+    font-size: calc(1.01875rem + 1.52344vmin);
+  }
+}
+
 .footer {
   width: 100%;
   text-align: center;
+  margin-top: 50px;
 
 }
 
@@ -635,7 +690,7 @@ html.sr .heading {
   }
 
 .footer__contact, .footer__copyright {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 300;
     padding: 10px;
   }
