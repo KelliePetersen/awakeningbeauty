@@ -1,0 +1,27 @@
+.topbar {
+  display: none;
+
+  @mixin atMedium {
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--gray);
+    margin-bottom: 100px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    margin: 0 30px;
+  }
+
+  &__text:last-child {
+    margin-right: 15px;
+  }
+}

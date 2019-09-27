@@ -537,13 +537,53 @@ html.sr .heading {
     left: 0;
   }
 
+.topbar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+
+.topbar {
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--gray);
+    margin-bottom: 100px
+}
+  }
+
+.topbar__container {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+.topbar__text {
+    margin: 0 30px;
+  }
+
+.topbar__text:last-child {
+    margin-right: 15px;
+  }
+
 .nav {
   width: 100vw;
   padding: 0 20px;
-  height: 90px;
+  height: 100px;
   background-color: var(--white);
   position: absolute;
+  top: 50px;
+  display: none;
 }
+
+@media (min-width: 768px) {
+
+.nav {
+    display: block
+}
+  }
 
 .nav__container {
     display: flex;
@@ -599,7 +639,7 @@ html.sr .heading {
     z-index: 10;
     opacity: 1;
     transition: opacity 0.75s;
-    box-shadow: 2px 2px solid var(--black);
+    box-shadow: 0px 2px 5px var(--gray);
   }
 
 .back-to-top {
