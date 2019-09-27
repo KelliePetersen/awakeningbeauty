@@ -1,6 +1,8 @@
+import WidescreenMenu from './modules/WidescreenMenu';
 import BackToTop from './modules/BackToTop';
 import RevealOnScroll from './modules/RevealOnScroll';
 
+const widescreenMenu = new WidescreenMenu();
 const backToTop = new BackToTop();
 const revealOnScroll = new RevealOnScroll();
 

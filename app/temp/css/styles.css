@@ -538,21 +538,43 @@ html.sr .heading {
   }
 
 .nav {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100vw;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 10;
+  padding: 0 20px;
+  height: 90px;
+  background-color: var(--white);
+  position: absolute;
 }
+
+.nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 10px auto;
+  }
+
+.nav__logo {
+    width: 175px;
+  }
+
+@media (min-width: 768px) {
+
+.nav__logo {
+      width: 200px
+  }
+  }
 
 .nav__list {
     margin: 0;
     padding: 0;
-    display: flex;
+    display: none;
+  }
+
+@media (min-width: 1200px) {
+
+.nav__list {
+      display: flex
+  }
   }
 
 .nav__section {
@@ -564,6 +586,20 @@ html.sr .heading {
     font-weight: 400;
     text-decoration: none;
     color: var(--black);
+  }
+
+.nav--is-hidden {
+    opacity: 0;
+  }
+
+.nav--is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 1;
+    transition: opacity 0.75s;
+    box-shadow: 2px 2px solid var(--black);
   }
 
 .back-to-top {
