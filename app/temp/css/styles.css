@@ -383,7 +383,7 @@ img {
 }
 
 html.sr .heading {
-  visibility: hidden;
+  
 }
 
 .social-icons {
@@ -559,6 +559,7 @@ html.sr .heading {
   }
 
 .nav__link {
+    font-weight: 400;
     text-decoration: none;
     color: var(--black);
   }
