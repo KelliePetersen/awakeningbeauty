@@ -351,9 +351,8 @@ template {
 
 :root {
   --black: #212121;
-  --white: #e6e6e6;
-  --gray: #252525;
-  --main-color: #d34a4a;
+  --white: #fff;
+  --main-color: #b27891;
 }
 
 html {
