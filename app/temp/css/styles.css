@@ -443,12 +443,11 @@ html.sr .heading {
   }
 
 .menu {
-  position: fixed;
-  top: 12px;
-  right: 20px;
   width: 50px;
   height: 50px;
-  z-index: 15;
+  position: absolute;
+  top: 10px;
+  right: 30px;
 }
 
 @media (min-width: 1200px) {
@@ -458,30 +457,19 @@ html.sr .heading {
 }
   }
 
-@media (min-width: 768px) {
-
-.menu:hover > .menu__background {
-      background-color: var(--main-color)
-  }
-  }
-
 .menu__background {
     position: absolute;
     top: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--gray);
+    left: 100vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-color);
     transition: 0.5s;
     transition-timing-function: ease-in;
   }
 
 .menu__background--is-open {
-      transform: scale(40);
-      top: 50vh;
-      right: 50vw;
-      background-color: var(--main-color);
+      transform: translateX(-100%);
     }
 
 .menu__button {
@@ -501,7 +489,7 @@ html.sr .heading {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: var(--white);
+    background-color: var(--black);
     border-radius: 10px;
     transform-origin: left center;
     transform: rotate(0deg);
@@ -538,20 +526,13 @@ html.sr .heading {
   }
 
 .topbar {
-  display: none;
-}
 
-@media (min-width: 768px) {
-
-.topbar {
-    display: block;
-    width: 100%;
-    font-size: 0.875rem;
-    padding: 10px 0;
-    border-bottom: 1px solid var(--gray);
-    margin-bottom: 100px
+  width: 100%;
+  font-size: 0.875rem;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--gray);
+  margin-bottom: 100px;
 }
-  }
 
 .topbar__container {
     display: flex;
@@ -561,27 +542,35 @@ html.sr .heading {
   }
 
 .topbar__text {
+    display: none;
     margin: 0 30px;
   }
 
+@media (min-width: 768px) {
+
+.topbar__text {
+      display: block
+  }
+  }
+
 .topbar__text:last-child {
+    display: block;
     margin-right: 15px;
   }
 
 .nav {
   width: 100vw;
   padding: 0 20px;
-  height: 100px;
+  height: 70px;
   background-color: var(--white);
   position: absolute;
   top: 50px;
-  display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
 
 .nav {
-    display: block
+    height: 100px
 }
   }
 
@@ -597,7 +586,7 @@ html.sr .heading {
     width: 175px;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
 
 .nav__logo {
       width: 200px
@@ -638,7 +627,7 @@ html.sr .heading {
     left: 0;
     z-index: 10;
     opacity: 1;
-    transition: opacity 0.75s;
+    transition: opacity 0.5s;
     box-shadow: 0px 2px 5px var(--gray);
   }
 

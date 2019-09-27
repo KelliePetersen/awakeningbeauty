@@ -1,14 +1,10 @@
 .topbar {
-  display: none;
 
-  @mixin atMedium {
-    display: block;
-    width: 100%;
-    font-size: 0.875rem;
-    padding: 10px 0;
-    border-bottom: 1px solid var(--gray);
-    margin-bottom: 100px;
-  }
+  width: 100%;
+  font-size: 0.875rem;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--gray);
+  margin-bottom: 100px;
 
   &__container {
     display: flex;
@@ -18,10 +14,15 @@
   }
 
   &__text {
+    display: none;
     margin: 0 30px;
+    @mixin atMedium {
+      display: block;
+    }
   }
 
   &__text:last-child {
+    display: block;
     margin-right: 15px;
   }
 }
