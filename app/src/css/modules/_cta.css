@@ -31,5 +31,7 @@
 
   &__subheading {
     responsive-font-size: 1.75rem;
+    margin-top: 10px;
+    margin-bottom: 50px;
   }
 }
