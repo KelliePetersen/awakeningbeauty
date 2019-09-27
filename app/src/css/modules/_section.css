@@ -1,0 +1,13 @@
+.section {
+  margin: 100px auto;
+  max-width: 1400px;
+  width: 90%;
+
+  @mixin atMedium {
+    margin: 100px auto 150px auto;
+  }
+
+  @mixin atLarge {
+    margin: 200px auto;
+  }
+}

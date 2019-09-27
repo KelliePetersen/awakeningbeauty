@@ -31,13 +31,28 @@
 
   &__location {
     font-weight: 300;
-    margin-bottom: 50px;
   }
 
   &__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  &__arrow-container {
+    display: none;
+    margin: 40px auto;
+    width: 50px;
+    text-align: center;
+
+    @mixin atMedium {
+      display: block;
+    }
+  }
+
+  &__arrow-text {
+    font-size: 0.875rem;
+    margin-bottom: 10px;
   }
 
 }

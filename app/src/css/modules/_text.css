@@ -1,6 +1,24 @@
 .text {
 
-  &--light {
-    font-weight: 300;
+  &__heading {
+    color: var(--main-color);
+    responsive-font-size: 3rem;
+    font-weight: 400;
   }
+
+  &__paragraph {
+    responsive-font-size: 1.125rem;
+    letter-spacing: 0.5px;
+    max-width: 450px;
+  }
+
+  &__container {
+    @mixin atMedium {
+      margin-left: 20%;
+    }
+    @mixin atLarge {
+      margin-left: 0;
+    }
+  }
+
 }

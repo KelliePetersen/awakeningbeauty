@@ -4,7 +4,11 @@
   font-size: 0.875rem;
   padding: 10px 0;
   border-bottom: 1px solid var(--gray);
-  margin-bottom: 100px;
+  margin-bottom: 70px;
+
+  @mixin atLarge {
+    margin-bottom: 100px;
+  }
 
   &__container {
     display: flex;
