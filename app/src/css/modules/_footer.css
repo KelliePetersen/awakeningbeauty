@@ -1,0 +1,50 @@
+.footer {
+  width: 100%;
+  text-align: center;
+
+  &__logo {
+    max-width: 80%;
+  }
+
+  &__list {
+    margin: 25px auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: minmax(min-content, 80px) minmax(min-content, 80px);
+    grid-column-gap: 40px;
+    grid-row-gap: 25px;
+    max-width: min-content;
+    text-align: left;
+    @mixin atSmall {
+      grid-template-columns: minmax(min-content, 80px) minmax(min-content, 80px) minmax(min-content, 80px);
+    }
+  }
+
+  &__section {
+    list-style-type: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--black);
+  }
+
+  &__contact, &__copyright {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+  }
+
+  &__contact {
+    width: 100%;
+    border: 1px solid var(--gray);
+  }
+
+  &__text {
+    @mixin atMedium {
+      display: inline-block;
+      padding: 0 30px;
+    }
+  }
+
+}

@@ -12,6 +12,8 @@ html, body {
 body {
   font-family: 'Lato', arial, sans-serif;
   font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1.75;
   -webkit-tap-highlight-color: transparent;
 }
 

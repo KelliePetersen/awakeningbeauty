@@ -352,6 +352,7 @@ template {
 :root {
   --black: #212121;
   --white: #fff;
+  --gray: #d3d0d0;
   --main-color: #b27891;
 }
 
@@ -369,6 +370,8 @@ html, body {
 body {
   font-family: 'Lato', arial, sans-serif;
   font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1.75;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -588,4 +591,64 @@ html.sr .heading {
 
 .back-to-top--hidden {
     display: none;
+  }
+
+.footer {
+  width: 100%;
+  text-align: center;
+
+}
+
+.footer__logo {
+    max-width: 80%;
+  }
+
+.footer__list {
+    margin: 25px auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: minmax(-webkit-min-content, 80px) minmax(-webkit-min-content, 80px);
+    grid-template-columns: minmax(min-content, 80px) minmax(min-content, 80px);
+    grid-column-gap: 40px;
+    grid-row-gap: 25px;
+    max-width: -webkit-min-content;
+    max-width: -moz-min-content;
+    max-width: min-content;
+    text-align: left;
+  }
+
+@media (min-width: 500px) {
+
+.footer__list {
+      grid-template-columns: minmax(-webkit-min-content, 80px) minmax(-webkit-min-content, 80px) minmax(-webkit-min-content, 80px);
+      grid-template-columns: minmax(min-content, 80px) minmax(min-content, 80px) minmax(min-content, 80px)
+  }
+  }
+
+.footer__section {
+    list-style-type: none;
+  }
+
+.footer__link {
+    text-decoration: none;
+    color: var(--black);
+  }
+
+.footer__contact, .footer__copyright {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+  }
+
+.footer__contact {
+    width: 100%;
+    border: 1px solid var(--gray);
+  }
+
+@media (min-width: 768px) {
+
+.footer__text {
+      display: inline-block;
+      padding: 0 30px
+  }
   }
