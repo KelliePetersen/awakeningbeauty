@@ -801,6 +801,7 @@ html.sr .heading {
     color: var(--main-color);
     font-size: 3rem;
     font-weight: 400;
+    margin-top: 0;
   }
 
 @media (max-width: 768px), (max-height: 768px) {
@@ -932,4 +933,77 @@ html.sr .heading {
 .hero__arrow-text {
     font-size: 0.875rem;
     margin-bottom: 10px;
+  }
+
+.intro {
+  display: grid;
+}
+
+@media (min-width: 1200px) {
+
+.intro {
+    grid-template-columns: 1fr 1fr
+}
+  }
+
+@media (min-width: 1500px) {
+
+.intro__text {
+      margin-top: 20%
+  }
+  }
+
+.intro__container {
+    display: none;
+  }
+
+@media (min-width: 1200px) {
+
+.intro__container {
+      display: block
+  }
+  }
+
+@media (min-width: 1500px) {
+
+.intro__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr
+  }
+  }
+
+.intro__image1 {
+    margin-left: 10%;
+  }
+
+@media (min-width: 1500px) {
+
+.intro__image1 {
+      margin-left: 0;
+      padding-right: 35px
+  }
+  }
+
+.intro__image2 {
+    margin-top: auto;
+    margin-bottom: 35px;
+  }
+
+.intro__image3 {
+    padding-top: 35px;
+  }
+
+.intro__image4 {
+    padding-left: 35px;
+  }
+
+.intro--hidden {
+    display:none;
+  }
+
+@media (min-width: 1500px) {
+
+.intro--hidden {
+      display: block
+  }
   }

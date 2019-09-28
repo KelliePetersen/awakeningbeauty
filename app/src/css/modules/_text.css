@@ -4,6 +4,7 @@
     color: var(--main-color);
     responsive-font-size: 3rem;
     font-weight: 400;
+    margin-top: 0;
   }
 
   &__paragraph {

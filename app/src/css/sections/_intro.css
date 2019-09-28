@@ -1,0 +1,52 @@
+.intro {
+  display: grid;
+
+  @mixin atLarge {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__text {
+    @mixin atWide {
+      margin-top: 20%;
+    }
+  }
+
+  &__container {
+    display: none;
+    @mixin atLarge {
+      display: block;
+    }
+    @mixin atWide {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__image1 {
+    margin-left: 10%;
+    @mixin atWide {
+      margin-left: 0;
+      padding-right: 35px;
+    }
+  }
+
+  &__image2 {
+    margin-top: auto;
+    margin-bottom: 35px;
+  }
+
+  &__image3 {
+    padding-top: 35px;
+  }
+
+  &__image4 {
+    padding-left: 35px;
+  }
+
+  &--hidden {
+    display:none;
+    @mixin atWide {
+      display: block;
+    }
+  }
+}
