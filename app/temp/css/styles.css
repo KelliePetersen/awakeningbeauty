@@ -967,8 +967,17 @@ html.sr .heading {
 
 .hero__arrow-text {
     font-size: 0.875rem;
-    margin-bottom: 10px;
+    margin: 0;
   }
+
+.hero__arrow {
+    transition: 0.25s;
+    padding: 10px 20px;
+  }
+
+.hero__arrow:hover {
+      transform: scale(1.2);
+    }
 
 .subhero {
   width: 100vw;
@@ -1012,12 +1021,24 @@ html.sr .heading {
 
 .intro {
   display: grid;
+  padding: 100px 0;
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
 }
+
+@media (min-width: 768px) {
+
+.intro {
+    padding: 100px 0 150px 0
+}
+  }
 
 @media (min-width: 1200px) {
 
 .intro {
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 1fr 1fr;
+    padding: 200px 0
 }
   }
 

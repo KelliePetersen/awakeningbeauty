@@ -1,8 +1,17 @@
 .intro {
   display: grid;
+  padding: 100px 0;
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+
+  @mixin atMedium {
+    padding: 100px 0 150px 0;
+  }
 
   @mixin atLarge {
     grid-template-columns: 1fr 1fr;
+    padding: 200px 0;
   }
 
   &__text {
