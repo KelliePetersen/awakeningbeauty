@@ -1384,7 +1384,7 @@ html.sr .heading {
   }
 
 .contact__map {
-    width: 90%;
+    width: 100%;
     max-width: 800px;
     height: 450px;
     background-color: var(--main-color);
