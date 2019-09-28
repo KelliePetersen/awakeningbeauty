@@ -1,0 +1,26 @@
+.about {
+  display: grid;
+  row-gap: 60px;
+  column-gap: 100px;
+
+  @mixin atLarge {
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    row-gap: 130px;
+  }
+
+  &__barbershop {
+    max-width: 600px;
+    margin: 0 auto;
+    @mixin atLarge {
+      max-width: 800px;
+    }
+  }
+
+  &__woman {
+    display: none;
+    @mixin atLarge {
+      display: block;
+    }
+  }
+}

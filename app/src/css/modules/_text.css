@@ -5,6 +5,7 @@
     responsive-font-size: 3rem;
     font-weight: 400;
     margin-top: 0;
+    max-width: 550px;
   }
 
   &__paragraph {

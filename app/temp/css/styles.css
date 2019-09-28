@@ -802,6 +802,7 @@ html.sr .heading {
     font-size: 3rem;
     font-weight: 400;
     margin-top: 0;
+    max-width: 550px;
   }
 
 @media (max-width: 768px), (max-height: 768px) {
@@ -1057,7 +1058,6 @@ html.sr .heading {
   width: -moz-max-content;
   width: max-content;
   max-width: 90%;
-  margin: 100px auto;
 }
 
 @media (min-width: 1200px) {
@@ -1065,8 +1065,7 @@ html.sr .heading {
 .brands {
     max-width: 900px;
     row-gap: 100px;
-    grid-template-columns: 1fr 1fr;
-    margin: 200px auto
+    grid-template-columns: 1fr 1fr
 }
   }
 
@@ -1081,6 +1080,45 @@ html.sr .heading {
 @media (min-width: 1200px) {
 
 .brands__image {
+      display: block
+  }
+  }
+
+.about {
+  display: grid;
+  row-gap: 60px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+}
+
+@media (min-width: 1200px) {
+
+.about {
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    row-gap: 130px
+}
+  }
+
+.about__barbershop {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+@media (min-width: 1200px) {
+
+.about__barbershop {
+      max-width: 800px
+  }
+  }
+
+.about__woman {
+    display: none;
+  }
+
+@media (min-width: 1200px) {
+
+.about__woman {
       display: block
   }
   }
