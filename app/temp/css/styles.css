@@ -935,6 +935,46 @@ html.sr .heading {
     margin-bottom: 10px;
   }
 
+.subhero {
+  width: 100vw;
+  height: 250px;
+  position: relative;
+  background-color: var(--main-color);
+}
+
+@media (min-width: 768px) {
+
+.subhero {
+    height: 350px
+}
+  }
+
+.subhero__image {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+.subhero__heading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: var(--white);
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+
+@media (max-width: 768px), (max-height: 768px) {
+
+  .subhero__heading {
+    font-size: calc(1.075rem + 6.09375vmin);
+  }
+}
+
 .intro {
   display: grid;
 }
