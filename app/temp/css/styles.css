@@ -1166,11 +1166,19 @@ html.sr .heading {
     margin-top: 50px;
     width: 100%;
     text-align: left;
+    table-layout: fixed;
   }
 
 .pricing th, .pricing td {
     padding: 15px 0;
     border-bottom: 1px solid var(--gray);
+  }
+
+@media (min-width: 768px) {
+
+.pricing th:nth-child(2), .pricing th:nth-child(3) {
+      width: 15%
+  }
   }
 
 .brands {
