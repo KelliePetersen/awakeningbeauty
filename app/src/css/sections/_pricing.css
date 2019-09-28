@@ -1,0 +1,24 @@
+.pricing {
+  font-size: 1.125rem;
+
+  &__heading {
+    color: var(--main-color);
+  }
+
+  &__heading, &__subheading {
+    text-align: center;
+    max-width: 475px;
+    margin: auto auto;
+  }
+
+  &__table {
+    margin-top: 50px;
+    width: 100%;
+    text-align: left;
+  }
+
+  th, td {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--gray);
+  }
+}

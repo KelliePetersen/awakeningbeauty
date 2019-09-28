@@ -1148,6 +1148,31 @@ html.sr .heading {
     margin-left: 30px;
   }
 
+.pricing {
+  font-size: 1.125rem;
+}
+
+.pricing__heading {
+    color: var(--main-color);
+  }
+
+.pricing__heading, .pricing__subheading {
+    text-align: center;
+    max-width: 475px;
+    margin: auto auto;
+  }
+
+.pricing__table {
+    margin-top: 50px;
+    width: 100%;
+    text-align: left;
+  }
+
+.pricing th, .pricing td {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--gray);
+  }
+
 .brands {
   display: grid;
   row-gap: 60px;
