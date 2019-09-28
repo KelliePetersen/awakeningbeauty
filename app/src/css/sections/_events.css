@@ -1,0 +1,39 @@
+.events {
+  display: grid;
+
+  @mixin atLarge {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__container {
+    display: none;
+    @mixin atLarge {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 300px auto;
+      column-gap: 30px;
+    }
+  }
+
+  &__image1 {
+    height: 500px;
+    width: 350px;
+    object-fit: cover;
+    grid-row: 1 / 3;
+  }
+
+  &__image2 {
+    height: 330px;
+    width: 250px;
+    object-fit: cover;
+  }
+
+  &__image3 {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    margin-top: auto;
+    margin-bottom: 60px;
+    margin-left: 30px;
+  }
+}

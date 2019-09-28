@@ -5,7 +5,6 @@
     responsive-font-size: 3rem;
     font-weight: 400;
     margin-top: 0;
-    max-width: 550px;
   }
 
   &__paragraph {
@@ -15,7 +14,7 @@
   }
 
   &__container {
-    max-width: 450px;
+    max-width: 510px;
     @mixin atMedium {
       margin-left: 20%;
     }
