@@ -1049,6 +1049,25 @@ html.sr .heading {
   }
   }
 
+.services__container {
+    max-width: 450px;
+  }
+
+.services__heading {
+    margin-bottom: 0;
+  }
+
+.services__grid {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin-top: 30px;
+    max-width: 400px;
+  }
+
+.services__grid-item {
+    margin: 5px 0;
+  }
+
 .brands {
   display: grid;
   row-gap: 60px;
