@@ -825,6 +825,10 @@ html.sr .heading {
   }
 }
 
+.text__container {
+    max-width: 450px;
+  }
+
 @media (min-width: 768px) {
 
 .text__container {
@@ -1049,8 +1053,19 @@ html.sr .heading {
   }
   }
 
-.services__container {
-    max-width: 450px;
+.services {
+  display: grid;
+  row-gap: 50px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+}
+
+@media (min-width: 1200px) {
+
+.services {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 200px
+}
   }
 
 .services__heading {
@@ -1066,6 +1081,21 @@ html.sr .heading {
 
 .services__grid-item {
     margin: 5px 0;
+  }
+
+.services__image {
+    display: none;
+    width: 550px;
+    height: 700px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+@media (min-width: 1200px) {
+
+.services__image {
+      display: block
+  }
   }
 
 .brands {

@@ -1,7 +1,11 @@
 .services {
+  display: grid;
+  row-gap: 50px;
+  column-gap: 100px;
 
-  &__container {
-    max-width: 450px;
+  @mixin atLarge {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 200px;
   }
 
   &__heading {
@@ -17,5 +21,15 @@
 
   &__grid-item {
     margin: 5px 0;
+  }
+
+  &__image {
+    display: none;
+    width: 550px;
+    height: 700px;
+    object-fit: cover;
+    @mixin atLarge {
+      display: block;
+    }
   }
 }
