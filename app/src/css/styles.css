@@ -8,6 +8,7 @@
 @import "modules/_menu";
 @import "modules/_topbar";
 @import "modules/_nav";
+@import "modules/_modal";
 @import "modules/_back-to-top";
 @import "modules/_cta";
 @import "modules/_footer";

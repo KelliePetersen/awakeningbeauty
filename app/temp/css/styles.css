@@ -458,21 +458,6 @@ html.sr .heading {
 }
   }
 
-.menu__background {
-    position: absolute;
-    top: 0;
-    left: 100vw;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--main-color);
-    transition: 0.5s;
-    transition-timing-function: ease-in;
-  }
-
-.menu__background--is-open {
-      transform: translateX(-100%);
-    }
-
 .menu__button {
     cursor: pointer;
     position: absolute;
@@ -573,6 +558,7 @@ html.sr .heading {
   background-color: var(--white);
   position: absolute;
   top: 50px;
+  z-index: 15;
 }
 
 @media (min-width: 1200px) {
@@ -642,6 +628,43 @@ html.sr .heading {
     opacity: 1;
     transition: opacity 0.5s;
     box-shadow: 0px 2px 5px var(--gray);
+  }
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  max-width: 500px;
+  height: 80vh;
+  max-height: 700px;
+  background-color: var(--white);
+  z-index: -1;
+  box-shadow: 0px 0px 10px var(--gray);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.modal__list {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    padding-left: 0;
+  }
+
+@media (max-width: 768px), (max-height: 768px) {
+
+  .modal__list {
+    font-size: calc(1.025rem + 2.03125vmin);
+  }
+}
+
+.modal--is-open {
+    opacity: 1;
+    z-index: 10;
   }
 
 .back-to-top {
@@ -896,6 +919,7 @@ html.sr .heading {
 .hero {
   width: 100vw;
   height: 70vh;
+  min-height: 450px;
   position: relative;
   color: var(--white);
 

@@ -5,6 +5,7 @@
   background-color: var(--white);
   position: absolute;
   top: 50px;
+  z-index: 15;
 
   @mixin atLarge {
     height: 100px;

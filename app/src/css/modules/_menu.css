@@ -9,21 +9,6 @@
     display: none;
   }
 
-  &__background {
-    position: absolute;
-    top: 0;
-    left: 100vw;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--main-color);
-    transition: 0.5s;
-    transition-timing-function: ease-in;
-
-    &--is-open {
-      transform: translateX(-100%);
-    }
-  }
-
   &__button {
     cursor: pointer;
     position: absolute;
