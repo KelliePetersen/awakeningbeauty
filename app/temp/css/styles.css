@@ -354,6 +354,7 @@ template {
   --white: #fff;
   --gray: #d3d0d0;
   --main-color: #b27891;
+  --secondary-color: #bf4095;
 }
 
 html {
@@ -622,7 +623,12 @@ html.sr .heading {
     font-weight: 400;
     text-decoration: none;
     color: var(--black);
+    transition: 0.25s;
   }
+
+.nav__link:hover {
+      color: var(--secondary-color);
+    }
 
 .nav--is-hidden {
     opacity: 0;
@@ -763,7 +769,12 @@ html.sr .heading {
 .footer__link {
     text-decoration: none;
     color: var(--black);
+    transition: 0.25s;
   }
+
+.footer__link:hover {
+      color: var(--secondary-color);
+    }
 
 .footer__contact, .footer__copyright {
     font-size: 0.875rem;

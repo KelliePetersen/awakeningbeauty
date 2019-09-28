@@ -43,6 +43,11 @@
     font-weight: 400;
     text-decoration: none;
     color: var(--black);
+    transition: 0.25s;
+
+    &:hover {
+      color: var(--secondary-color);
+    }
   }
 
   &--is-hidden {

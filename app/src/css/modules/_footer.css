@@ -28,6 +28,11 @@
   &__link {
     text-decoration: none;
     color: var(--black);
+    transition: 0.25s;
+
+    &:hover {
+      color: var(--secondary-color);
+    }
   }
 
   &__contact, &__copyright {
