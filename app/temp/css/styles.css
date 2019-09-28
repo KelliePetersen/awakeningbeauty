@@ -1122,3 +1122,61 @@ html.sr .heading {
       display: block
   }
   }
+
+.contact {
+
+  display: grid;
+  row-gap: 70px;
+}
+
+@media (min-width: 1200px) {
+
+.contact {
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    -moz-column-gap: 100px;
+         column-gap: 100px
+}
+  }
+
+.contact__container {
+    display: grid;
+    row-gap: 35px;
+    max-width: 350px;
+  }
+
+@media (min-width: 768px) {
+
+.contact__container {
+      margin-left: 30%
+  }
+  }
+
+@media (min-width: 1200px) {
+
+.contact__container {
+      margin-left: 0
+  }
+  }
+
+.contact__heading {
+    color: var(--main-color);
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+.contact__text {
+    margin: 5px 0;
+  }
+
+.contact__grid {
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+
+.contact__map {
+    width: 90%;
+    max-width: 800px;
+    height: 450px;
+    background-color: var(--main-color);
+  }
