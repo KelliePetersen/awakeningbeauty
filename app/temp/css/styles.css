@@ -1047,3 +1047,40 @@ html.sr .heading {
       display: block
   }
   }
+
+.brands {
+  display: grid;
+  row-gap: 60px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 90%;
+  margin: 100px auto;
+}
+
+@media (min-width: 1200px) {
+
+.brands {
+    max-width: 900px;
+    row-gap: 100px;
+    grid-template-columns: 1fr 1fr;
+    margin: 200px auto
+}
+  }
+
+.brands__image {
+    display: none;
+    width: 450px;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+@media (min-width: 1200px) {
+
+.brands__image {
+      display: block
+  }
+  }
