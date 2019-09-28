@@ -22,5 +22,11 @@
       margin-left: 0;
     }
   }
+ 
+  &__icon {
+    display: inline-block;
+    width: 20px;
+    padding-right: 5px;
+  }
 
 }
