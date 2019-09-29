@@ -997,7 +997,6 @@ img {
   width: 100vw;
   height: 250px;
   position: relative;
-  background-color: var(--main-color);
 }
 
 @media (min-width: 768px) {

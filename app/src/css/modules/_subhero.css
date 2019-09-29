@@ -2,7 +2,6 @@
   width: 100vw;
   height: 250px;
   position: relative;
-  background-color: var(--main-color);
 
   @mixin atMedium {
     height: 350px;
