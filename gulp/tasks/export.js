@@ -2,11 +2,11 @@ const gulp = require('gulp'),
       zip = require('gulp-zip'),
       del = require('del');
 
-gulp.task('deleteZIP', () => del('./dist.zip'));
+gulp.task('deleteZIP', () => del('./docs.zip'));
 
 gulp.task('createZIP', (done) => {
-  gulp.src('dist/**')
-    .pipe(zip('dist.zip'))
+  gulp.src('docs/**')
+    .pipe(zip('docs.zip'))
     .pipe(gulp.dest('./'));
     done();
 });
