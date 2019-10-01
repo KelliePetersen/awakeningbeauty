@@ -20,10 +20,11 @@
   }
 
   &__logo {
-    width: 175px;
-    @mixin atLarge {
-      width: 200px;
-    }
+    font-family: 'Tangerine';
+    text-decoration: none;
+    color: var(--black);
+    font-size: 2rem;
+    margin-top: -5px;
   }
 
   &__list {

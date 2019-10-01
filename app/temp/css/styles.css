@@ -567,14 +567,11 @@ img {
   }
 
 .nav__logo {
-    width: 175px;
-  }
-
-@media (min-width: 1200px) {
-
-.nav__logo {
-      width: 200px
-  }
+    font-family: 'Tangerine';
+    text-decoration: none;
+    color: var(--black);
+    font-size: 2rem;
+    margin-top: -5px;
   }
 
 .nav__list {
@@ -926,9 +923,17 @@ img {
   }
 
 .hero__heading {
-    position: absolute;
-    left: 9999px;
+    font-family: 'Tangerine';
+    font-size: 8rem;
+    margin: 0;
   }
+
+@media (max-width: 768px), (max-height: 768px) {
+
+  .hero__heading {
+    font-size: calc(1.175rem + 14.21875vmin);
+  }
+}
 
 .hero__subheading {
     font-size: 1.75rem;

@@ -16,8 +16,9 @@
   }
 
   &__heading {
-    position: absolute;
-    left: 9999px;
+    font-family: 'Tangerine';
+    responsive-font-size: 8rem;
+    margin: 0;
   }
 
   &__subheading {
