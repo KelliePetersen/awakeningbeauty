@@ -1,16 +1,18 @@
 .button {
   display: inline-block;
   text-decoration: none;
-  color: var(--white);
   font-size: 1.375rem;
   border: 2px solid var(--white);
+  background-color: var(--white);
+  color: var(--black);
   padding: 12px 35px;
   margin-top: 30px;
   transition: 0.25s;
 
   &:hover {
-    background-color: var(--white);
-    color: var(--main-color);
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    color: var(--white);
   }
 
   &--colored {

@@ -728,19 +728,6 @@ img {
   }
 }
 
-.cta__subheading {
-    font-size: 1.75rem;
-    margin-top: 10px;
-    margin-bottom: 0;
-  }
-
-@media (max-width: 768px), (max-height: 768px) {
-
-  .cta__subheading {
-    font-size: calc(1.01875rem + 1.52344vmin);
-  }
-}
-
 .footer {
   width: 100%;
   text-align: center;
@@ -753,7 +740,7 @@ img {
   }
 
 .footer__list {
-    margin: 25px auto;
+    margin: 10px auto 25px auto;
     padding: 0;
     display: grid;
     grid-template-columns: minmax(-webkit-min-content, 80px) minmax(-webkit-min-content, 80px);
@@ -810,9 +797,10 @@ img {
 .button {
   display: inline-block;
   text-decoration: none;
-  color: var(--white);
   font-size: 1.375rem;
   border: 2px solid var(--white);
+  background-color: var(--white);
+  color: var(--black);
   padding: 12px 35px;
   margin-top: 30px;
   transition: 0.25s;
@@ -820,8 +808,9 @@ img {
 }
 
 .button:hover {
-    background-color: var(--white);
-    color: var(--main-color);
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    color: var(--white);
   }
 
 .button--colored {
@@ -929,7 +918,7 @@ img {
     font-family: 'Romantic Couple';
     font-size: 11rem;
     margin: 0;
-    margin-top: -20px;
+    margin-top: -40px;
   }
 
 @media (max-width: 768px), (max-height: 768px) {
@@ -988,6 +977,15 @@ img {
   }
   }
 
+.hero__arrow-container:hover .hero__arrow {
+      transform: translateY(10%);
+    }
+
+.hero__arrow-link {
+    text-decoration: none;
+    color: var(--black);
+  }
+
 .hero__arrow-text {
     font-size: 0.875rem;
     margin: 0;
@@ -997,10 +995,6 @@ img {
     transition: 0.25s;
     padding: 10px 20px;
   }
-
-.hero__arrow:hover {
-      transform: scale(1.2);
-    }
 
 .subhero {
   width: 100vw;
@@ -1060,7 +1054,7 @@ img {
 
 .intro {
     grid-template-columns: 1fr 1fr;
-    padding: 200px 0
+    padding: 100px 0 200px 0
 }
   }
 

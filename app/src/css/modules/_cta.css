@@ -28,10 +28,4 @@
     max-width: 430px;
     margin: 0 auto;
   }
-
-  &__subheading {
-    responsive-font-size: 1.75rem;
-    margin-top: 10px;
-    margin-bottom: 0;
-  }
 }

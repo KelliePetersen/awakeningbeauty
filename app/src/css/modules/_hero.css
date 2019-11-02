@@ -19,7 +19,7 @@
     font-family: 'Romantic Couple';
     responsive-font-size: 11rem;
     margin: 0;
-    margin-top: -20px;
+    margin-top: -40px;
   }
 
   &__subheading {
@@ -51,6 +51,15 @@
     @mixin atMedium {
       display: block;
     }
+
+    &:hover .hero__arrow {
+      transform: translateY(10%);
+    }
+  }
+
+  &__arrow-link {
+    text-decoration: none;
+    color: var(--black);
   }
 
   &__arrow-text {
@@ -61,9 +70,6 @@
   &__arrow {
     transition: 0.25s;
     padding: 10px 20px;
-    &:hover {
-      transform: scale(1.2);
-    }
   }
 
 }

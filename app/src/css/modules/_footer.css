@@ -8,7 +8,7 @@
   }
 
   &__list {
-    margin: 25px auto;
+    margin: 10px auto 25px auto;
     padding: 0;
     display: grid;
     grid-template-columns: minmax(min-content, 80px) minmax(min-content, 80px);
