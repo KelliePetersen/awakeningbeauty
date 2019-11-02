@@ -10,7 +10,7 @@ class WidescreenMenu {
   }
 
   hiddenMenu() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
       this.nav[0].classList.add('nav--is-hidden');
     } else {
       this.nav[0].classList.remove('nav--is-hidden');

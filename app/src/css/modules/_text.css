@@ -16,7 +16,7 @@
   &__container {
     max-width: 510px;
     @mixin atMedium {
-      margin-left: 20%;
+      margin-left: 10%;
     }
     @mixin atLarge {
       margin-left: 0;

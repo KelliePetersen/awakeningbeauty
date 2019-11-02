@@ -6,7 +6,7 @@
   @mixin atLarge {
     grid-template-columns: 40% 60%;
     align-items: center;
-    row-gap: 130px;
+    row-gap: 160px;
   }
 
   &__barbershop {

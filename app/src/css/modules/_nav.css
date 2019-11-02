@@ -24,8 +24,11 @@
     font-weight: 700;
     text-decoration: none;
     color: var(--black);
-    font-size: 3rem;
+    responsive-font-size: 2.5rem;
     margin-top: -5px;
+    @mixin atLarge {
+      font-size: 3rem;
+    }
   }
 
   &__list {
