@@ -527,6 +527,7 @@ img {
 .topbar__text {
     display: none;
     margin: 0 30px;
+    font-weight: 300;
   }
 
 @media (min-width: 768px) {
@@ -567,10 +568,11 @@ img {
   }
 
 .nav__logo {
-    font-family: 'Tangerine';
+    font-family: 'Romantic Couple';
+    font-weight: 700;
     text-decoration: none;
     color: var(--black);
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: -5px;
   }
 
@@ -811,7 +813,7 @@ img {
   color: var(--white);
   font-size: 1.375rem;
   border: 2px solid var(--white);
-  padding: 15px 35px;
+  padding: 12px 35px;
   margin-top: 30px;
   transition: 0.25s;
 
@@ -881,6 +883,7 @@ img {
     display: inline-block;
     width: 20px;
     padding-right: 5px;
+    opacity: 0.8;
   }
 
 .section {
@@ -923,21 +926,22 @@ img {
   }
 
 .hero__heading {
-    font-family: 'Tangerine';
-    font-size: 8rem;
+    font-family: 'Romantic Couple';
+    font-size: 11rem;
     margin: 0;
+    margin-top: -20px;
   }
 
 @media (max-width: 768px), (max-height: 768px) {
 
   .hero__heading {
-    font-size: calc(1.175rem + 14.21875vmin);
+    font-size: calc(1.25rem + 20.3125vmin);
   }
 }
 
 .hero__subheading {
     font-size: 1.75rem;
-    margin-top: -30px;
+    margin-top: -80px;
   }
 
 @media (max-width: 768px), (max-height: 768px) {

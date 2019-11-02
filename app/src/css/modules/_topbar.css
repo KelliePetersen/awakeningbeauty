@@ -20,6 +20,7 @@
   &__text {
     display: none;
     margin: 0 30px;
+    font-weight: 300;
     @mixin atMedium {
       display: block;
     }
