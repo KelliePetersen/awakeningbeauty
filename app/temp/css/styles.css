@@ -385,6 +385,11 @@ img {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Romantic Couple Regular';
+  src: local('Romantic Couple Regular'), url('../../src/fonts/Romantic Couple.woff') format('woff');
+}
+
 .social-icons {
   text-align: center;
   max-width: 250px;
@@ -568,7 +573,7 @@ img {
   }
 
 .nav__logo {
-    font-family: 'Romantic Couple';
+    font-family: 'Romantic Couple Regular';
     font-weight: 700;
     text-decoration: none;
     color: var(--black);
@@ -929,7 +934,7 @@ img {
   }
 
 .hero__heading {
-    font-family: 'Romantic Couple';
+    font-family: 'Romantic Couple Regular';
     font-size: 11rem;
     margin: 0;
     margin-top: -40px;

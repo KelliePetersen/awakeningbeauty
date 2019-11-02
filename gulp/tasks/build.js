@@ -29,6 +29,11 @@ gulp.task('copyFiles', () => {
     .pipe(gulp.dest('./docs'));
 });
 
+gulp.task('copyFonts', () => 
+  gulp.src('./app/src/fonts/**')
+    .pipe(gulp.dest('./docs/src/fonts'))
+)
+
 gulp.task('minifyImages', () =>
   gulp.src(['./app/src/img/**/*', '!./app/src/img/icons', '!./app/src/img/icons/**'])
     .pipe(imagemin({
@@ -56,6 +61,7 @@ gulp.task(
     'deleteDist', 
     'fileInclude',
     'copyFiles', 
+    'copyFonts',
     'sprite', 
     'minifyImages', 
     gulp.parallel('buildCSS', 'buildJS'), 
