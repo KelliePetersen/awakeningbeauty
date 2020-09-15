@@ -19,6 +19,7 @@
 
   &__text {
     display: none;
+    align-items: center;
     text-decoration: none;
     color: black;
     margin: 0 30px;

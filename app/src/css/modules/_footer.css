@@ -42,15 +42,24 @@
   }
 
   &__contact {
-    width: 100%;
+    width: max-content;
+    margin: 0 auto;
     border: 1px solid var(--gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @mixin atMedium {
+      width: 100%;
+      flex-direction: row;
+    }
   }
 
   &__text {
     color: black;
     text-decoration: none;
+    align-items: center;
+    display: flex;
     @mixin atMedium {
-      display: inline-block;
       padding: 0 30px;
     }
 
