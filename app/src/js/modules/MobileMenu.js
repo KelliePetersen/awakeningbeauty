@@ -1,7 +1,6 @@
 class MobileMenu {
   constructor() {
     this.menuIcon = document.getElementsByClassName('menu__button');
-    this.listItem = document.getElementsByClassName('menu__link');
     this.modal = document.getElementsByClassName('modal');
     this.events();
   }
@@ -9,11 +8,8 @@ class MobileMenu {
   events() {
     this.menuIcon[0].addEventListener("click", this.animateMenu.bind(this));
     this.menuIcon[0].addEventListener("click", this.toggleModal.bind(this));
-    this.modal[0].addEventListener("click", (event) => {
-      if (event.target.classList.contains('modal__link')) {
-        this.closeMenu();
-      }
-    });
+    window.addEventListener('scroll', this.closeMenu.bind(this));
+    window.addEventListener('resize', this.closeMenu.bind(this));
   }
 
   animateMenu() {
