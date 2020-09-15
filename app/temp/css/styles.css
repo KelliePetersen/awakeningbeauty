@@ -869,7 +869,7 @@ img {
   }
 
 .button--colored {
-    color: var(--main-color);
+    color: #7a3453;
     border: 2px solid var(--main-color);
   }
 
