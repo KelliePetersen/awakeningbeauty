@@ -67,13 +67,27 @@
     <p class="hero__location">Evans GA</p>
     <a class="button" href="services.html">OUR SERVICES</a>
   </div>
-  <img class="hero__image" src="src/img/hero.jpg"></img>
+  <img
+    class="hero__image"
+    srcset="src/img/hero-600.jpg 600w,
+            src/img/hero-1100.jpg 1100w,
+            src/img/hero-1500.jpg 1500w,
+            src/img/hero-2000.jpg 2000w,
+            src/img/hero.jpg 3000w"
+    sizes="(max-width: 599px) 600px,
+           (min-width: 600px) 1100px,
+           (min-width: 1100px) 1500px,
+           (min-width: 1500px) 2000px,
+           (min-width: 2000px) 3000px"
+    src="src/img/hero.jpg"
+    alt="A photo of the interior of Awakening Beauty Salon"
+  />
 </div>
 
 <div class="hero__arrow-container">
   <a href="#intro" class="hero__arrow-link">
     <p class="hero__arrow-text">Scroll</p>
-    <img class="hero__arrow" src="src/img/arrow.svg" alt="Arrow pointing down">
+    <img class="hero__arrow" src="src/img/arrow.svg" alt="Arrow pointing down" />
   </a>
 </div>
 
@@ -88,15 +102,15 @@
     <a class="button button--colored" href="services.html">OUR SERVICES</a>
   </div>
   <div class="intro__container">
-    <img class="intro__image1" src="src/img/intro1.jpg">
-    <img class="intro__image2 intro--hidden" src="src/img/intro2.jpg">
-    <img class="intro__image3 intro--hidden" src="src/img/intro3.jpg">
-    <img class="intro__image4 intro--hidden" src="src/img/intro4.jpg">
+    <img class="intro__image1" src="src/img/intro1.jpg" />
+    <img class="intro__image2 intro--hidden" src="src/img/intro2.jpg" />
+    <img class="intro__image3 intro--hidden" src="src/img/intro3.jpg" />
+    <img class="intro__image4 intro--hidden" src="src/img/intro4.jpg" />
   </div>
 </section>
 
 <div class="cta">
-  <img class="cta__image" src="src/img/cta.jpg"></img>
+  <img class="cta__image" src="src/img/cta.jpg" alt="A hairdresser holding a hairdryer and smiling"></img>
   <div class="cta__container">
     <p class="cta__heading">Find a style that reflects the real you.</p>
     <a class="button" href="contact.html">VISIT US NOW</a>
