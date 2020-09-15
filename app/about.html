@@ -83,7 +83,17 @@
 </section>
 
 <div class="cta">
-  <img class="cta__image" src="src/img/cta.jpg" alt="A hairdresser holding a hairdryer and smiling"></img>
+  <img
+    class="cta__image lazyload"
+    data-srcset="src/img/cta-600.jpg 600w,
+            src/img/cta-1200.jpg 1200w,
+            src/img/cta.jpg 2014w"
+    data-sizes="(max-width: 599px) 600px,
+           (max-width: 1199px) 1200px,
+           (min-width: 1200px) 2014px"
+    data-src="src/img/cta.jpg"
+    alt="A hairdresser holding a hairdryer and smiling"
+  />
   <div class="cta__container">
     <p class="cta__heading">Find a style that reflects the real you.</p>
     <a class="button" href="contact.html">VISIT US NOW</a>

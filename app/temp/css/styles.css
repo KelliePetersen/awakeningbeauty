@@ -390,6 +390,16 @@ img {
   src: local('Romantic Couple Regular'), url('../../src/fonts/Romantic Couple.woff') format('woff');
 }
 
+.lazyload, .lazyloading {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
 .social-icons {
   text-align: center;
   max-width: 250px;
@@ -736,6 +746,7 @@ img {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+    background-color: beige;
   }
 
 .cta__container {
