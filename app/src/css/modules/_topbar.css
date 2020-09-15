@@ -19,15 +19,30 @@
 
   &__text {
     display: none;
+    text-decoration: none;
+    color: black;
     margin: 0 30px;
     font-weight: 300;
-    @mixin atMedium {
-      display: block;
+
+    &:hover, &:focus {
+      color: var(--secondary-color);
     }
   }
 
-  &__text:last-child {
-    display: block;
-    margin-right: 15px;
+  &__text:nth-child(1) {
+    display: flex;
+  }
+
+  &__text:nth-child(2) {
+    @mixin atSmall {
+      display: flex;
+    }
+  }
+
+  &__text:nth-child(3) {
+    @mixin atMedium {
+      display: flex;
+      margin-right: 15px;
+    }
   }
 }

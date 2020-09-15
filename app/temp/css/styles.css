@@ -531,20 +531,33 @@ img {
 
 .topbar__text {
     display: none;
+    text-decoration: none;
+    color: black;
     margin: 0 30px;
     font-weight: 300;
   }
 
+.topbar__text:hover, .topbar__text:focus {
+      color: var(--secondary-color);
+    }
+
+.topbar__text:nth-child(1) {
+    display: flex;
+  }
+
+@media (min-width: 500px) {
+
+.topbar__text:nth-child(2) {
+      display: flex
+  }
+  }
+
 @media (min-width: 768px) {
 
-.topbar__text {
-      display: block
+.topbar__text:nth-child(3) {
+      display: flex;
+      margin-right: 15px
   }
-  }
-
-.topbar__text:last-child {
-    display: block;
-    margin-right: 15px;
   }
 
 .nav {
