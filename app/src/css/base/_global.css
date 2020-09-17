@@ -29,6 +29,7 @@ img {
 @font-face {
   font-family: 'Romantic Couple Regular';
   src: local('Romantic Couple Regular'), url('../../src/fonts/Romantic Couple.woff') format('woff');
+  font-display: swap;
 }
 
 .lazyload, .lazyloading {
